@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/styles/styleForm.css" />
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <a href="/index.html"
+          ><img class="logo" src="/assets/apple-removebg-preview.png" alt="logo"/></a>
+        <nav>
+          <a href="/index.html">Inicio</a>
+          <a href="acercaDe.html">Acerca de</a>
+          <a href="templates/contacto.html">Contacto</a>
+        </nav>
+        <button class="burger">
+          <div class="bar"></div>
+        </button>
+      </div>
+    </header>
+    <nav class="mobile-nav">
+      <a href="/index.html">Inicio</a>
+      <a href="acercaDe.html">Acerca de</a>
+      <a href="#">Contacto</a>
+    </nav>
+    <main>
+      <section class="main-section">
+        <h2>Contáctanos</h2>
+        <form action="envioCorrecto.html" method="get" id="form">
+           <label for="name">Nombre:</label> 
+          <input type="text" name="name" id="name" placeholder="Ej: Tristán" />
+          <label for="surname">Apellidos:</label>
+          <input type="text" name="surname" id="surname" placeholder="Ej:Marín López">
+          <label for="email">Correo Electronico:</label>
+          <input type="text" name="email" id="email" placeholder="Ej:tristanmlmp@gmail.com"/>
+          <label for="tlf">Telefono:</label>
+          <input type="text" name="tlf" placeholder="Ej:715678965" id="tlf">
+          
+        <textarea
+            name="message"
+            id="message"
+            cols="30"
+            rows="10"
+            placeholder="Por favor, inserta un mensaje"
+          ></textarea>
+          <input type="submit" value="Enviar" id="submit-btn" />
+          <ul id="errors-message"></ul>
+        </form>
+      </section>
+    </main>
+  </div>
+  <footer class="footer">
+    <div class="secciones">
+      <ul>
+        <li class="titulo-footer">Apple Store</li>
+        <li>Encontrar una tienda</li>
+        <li>App Apple Store</li>
+        <li>Campamento Apple</li>
+      </ul>
+    </div>
+    <div class="secciones">
+      <ul>
+        <li class="titulo-footer">Valores de Apple</li>
+        <li>Accesibilidad</li>
+        <li>Medio Ambiente</li>
+        <li>Privacidad</li>
+      </ul>
+    </div>
+    <div class="secciones">
+      <ul>
+        <li class="titulo-footer">Ver y Comprar</li>
+        <li>Mac</li>
+        <li>Ipad</li>
+        <li>MacBook</li>
+      </ul>
+    </div>
+    <div  class="secciones">
+      <ul>
+        <li class="titulo-footer">Acerca de Apple</li>
+        <li>Directivos</li>
+        <li>Newsroom</li>
+        <li>Inversores</li>
+      </ul>
+    </div>
+</footer>
+    <script src="/index.js" type="module"></script>
+    <script src="/scripts/formulario.js"></script>
+  </body>
+</html>
